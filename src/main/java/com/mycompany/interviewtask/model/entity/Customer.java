@@ -1,4 +1,4 @@
-package com.mycompany.interviewtask.entity;
+package com.mycompany.interviewtask.model.entity;
 
 import lombok.Data;
 import lombok.Getter;
