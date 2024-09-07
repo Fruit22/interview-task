@@ -23,10 +23,14 @@ repositories {
 dependencies {
     implementation 'org.springframework.boot:spring-boot-starter-data-jdbc'
     implementation 'org.springframework.boot:spring-boot-starter-data-jpa'
+    implementation 'org.springframework.boot:spring-boot-starter-web'
     implementation 'com.fasterxml.jackson.core:jackson-databind:2.14.0'
     implementation 'org.postgresql:postgresql:42.7.2'
-    implementation 'org.springframework.boot:spring-boot-starter-web'
     implementation 'org.liquibase:liquibase-core:4.8.0'
+    implementation 'org.mapstruct:mapstruct:1.6.0'
+
+    annotationProcessor 'org.mapstruct:mapstruct-processor:1.6.0'
+
     runtimeOnly 'org.postgresql:postgresql:42.7.2'
     compileOnly 'org.projectlombok:lombok'
     runtimeOnly 'com.h2database:h2'
@@ -36,13 +40,13 @@ dependencies {
 }
 liquibase {
     activities {
-        main(({
+        main {
             changeLogFile 'src/main/resources/db/changelog/migrate.xml'
             url 'jdbc:postgresql://localhost:5432/postgres'
             username 'postgres'
             password 'password'
             driver 'org.postgresql.Driver'
-        }))
+        }
     }
 }
 
