@@ -27,7 +27,7 @@ public class SaveCustomers {
         this.template = template;
     }
 
-    public void save() {
+    /*public void save() {
         // Здесь мы парсим
         ObjectMapper objectMapper = new ObjectMapper();
         List customer = new LinkedList();
@@ -123,5 +123,5 @@ public class SaveCustomers {
     @Override
     public int hashCode() {
         return Objects.hash(template);
-    }
+    }*/
 }

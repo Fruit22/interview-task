@@ -1,5 +1,6 @@
 package com.mycompany.interviewtask.impl;
 
+import com.mycompany.interviewtask.entity.Customer;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;

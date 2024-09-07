@@ -10,18 +10,18 @@ import javax.annotation.PostConstruct;
 @SuppressWarnings("all")
 public class ApplicationRunner {
 
-    SaveCustomers saveCustomers;
+   /* SaveCustomers saveCustomers;
 
 
     @PostConstruct
     public void start() {
         System.out.println("Start processing...");
-        saveCustomers.save();
+       // saveCustomers.save();
         System.out.println("Finished");
     }
 
     @Autowired
     public void setSaveCustomers(SaveCustomers saveCustomers) {
         this.saveCustomers = saveCustomers;
-    }
+    }*/
 }
