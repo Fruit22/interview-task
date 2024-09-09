@@ -6,4 +6,5 @@
                             http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-4.3.xsd">
 
     <include file="202409071620_create_customer.xml" relativeToChangelogFile="true"/>
+    <include file="202409091900_alter_customer.xml" relativeToChangelogFile="true"/>
 </databaseChangeLog>

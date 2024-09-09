@@ -1,5 +1,6 @@
 package com.mycompany.interviewtask.model.dto;
 
+import com.mycompany.interviewtask.model.enums.CustomerStatus;
 import lombok.*;
 
 import javax.persistence.Column;
@@ -12,7 +13,7 @@ import javax.persistence.Column;
 public class CustomerDto {
     String firstName;
     String lastName;
-    String status;
+    CustomerStatus status;
     Integer numberOfPurchases;
     Integer numberOfReturns;
     String phoneNumber;

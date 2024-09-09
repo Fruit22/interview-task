@@ -1,5 +1,6 @@
 package com.mycompany.interviewtask.model.entity;
 
+import com.mycompany.interviewtask.model.enums.CustomerStatus;
 import lombok.Data;
 import lombok.Getter;
 import lombok.Setter;
@@ -35,5 +36,6 @@ public class Customer {
     String phoneNumber;
 
     @Column(name = "rating")
-    Integer rating;
+    @Enumerated(EnumType.STRING)
+    CustomerStatus rating;
 }
